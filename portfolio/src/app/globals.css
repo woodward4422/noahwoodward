@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* Custom Gaegu Font */
+@font-face {
+  font-family: 'Gaegu';
+  src: url('/fonts/Gaegu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gaegu';
+  src: url('/fonts/Gaegu-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gaegu';
+  src: url('/fonts/Gaegu-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Playful, Graza-inspired palette */
+:root {
+  --background: #f6ede6; /* soft peach */
+  --foreground: #223328; /* deep olive */
+  --olive: #2f3a2e;
+  --olive-ink: #172218;
+  --cream: #fff8f1;
+  --accent: #ef8354; /* warm orange accent */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-olive: var(--olive);
+  --color-olive-ink: var(--olive-ink);
+  --color-cream: var(--cream);
+  --color-accent: var(--accent);
+
+  --font-gaegu: 'Gaegu', ui-sans-serif, system-ui;
+  --font-display: 'Gaegu', ui-sans-serif, system-ui;
+  --font-sans: 'Gaegu', ui-sans-serif, system-ui;
+  --font-accent: var(--font-accent);
+}
+
+/* Subtle paper-like texture using layered gradients */
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(255,255,255,0.7), transparent 60%),
+    radial-gradient(800px 400px at 120% 10%, rgba(255,255,255,0.6), transparent 40%),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-gaegu);
+}
+
+/* Hand-drawn helpers */
+.hand-outline {
+  box-shadow: 0 2px 0 0 var(--olive-ink), 0 4px 0 0 var(--olive-ink);
+}
+
+.ink-underline {
+  text-decoration: underline wavy 1.5px var(--olive-ink);
+  text-underline-offset: 6px;
+}
+
+.scribble-border {
+  border: 2px solid var(--olive-ink);
+  border-radius: 14px;
+}
+
+/* Slight jitter for whimsical feel */
+@keyframes floaty {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-4px) rotate(-0.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.floaty { animation: floaty 5s ease-in-out infinite; }
