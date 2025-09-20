@@ -50,6 +50,7 @@ export function Hero() {
             height={600}
             priority
             className="object-cover rounded-xl"
+            style={{ width: 'auto', height: 'auto' }}
           />
         </div>
       </div>
