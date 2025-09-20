@@ -52,9 +52,7 @@ export default function AboutPage() {
       <main className="mx-auto max-w-3xl px-6 pt-12 pb-24">
         <h1 className="font-display text-4xl text-olive-ink">Hi, I am Noah.</h1>
         <p className="mt-4 text-olive">
-          I’m a creative software engineer who loves building playful, high-quality mobile
-          experiences. I care about craft, motion, and helping people do their best work.
-        </p>
+          I’m a Senior Software Engineer caring deeply about the intersection of humans and commerce. Interested in everything frontend experience from highly performant animations to cutting edge interface designs.        </p>
 
         <h2 className="mt-10 font-display text-2xl text-olive-ink">Experience</h2>
         <ol className="mt-4 space-y-4">
