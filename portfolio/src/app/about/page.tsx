@@ -4,11 +4,11 @@ export const metadata = { title: "About — Noah Woodward" };
 
 const timeline = [
   {
-    role: "Software Engineer — POS Buyer Experience",
+    role: "Senior Software Engineer — POS Buyer Experience",
     company: "Shopify",
     period: "June 2025 — Present",
     blurb:
-      "Joined team to create a task force for short turnaround EAA legislation requirements, rebuilding accessibility foundations for better screen reader interfacing across all mobile apps. Currently working on app deployment foundations for large CI migration leveraging a new monorepo structure.",
+      "Joined team for short turnaround EAA legislation requirements, rebuilding accessibility foundations for better screen reader interfacing across all mobile apps. Currently working on app deployment foundations for large CI migration leveraging a new monorepo structure.",
   },
   {
     role: "Lead Engineer — AI Products Task Force",
