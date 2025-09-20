@@ -15,10 +15,6 @@ const nextConfig: NextConfig = {
       },
     ]
   },
-  // Disable host checking for development
-  experimental: {
-    allowedRevalidateHeaderKeys: ['*'],
-  },
 };
 
 export default nextConfig;
