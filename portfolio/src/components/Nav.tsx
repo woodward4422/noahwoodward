@@ -18,11 +18,12 @@ export function Nav() {
       transition={{ duration: 0.6 }}
       className="sticky top-0 z-40 bg-background/80 backdrop-blur-sm border-b border-olive-ink/20"
     >
-      <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-display text-2xl text-olive-ink tracking-wide">
-          Noah Woodward
+      <div className="mx-auto max-w-6xl px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
+        <Link href="/" aria-label="Home — Noah Woodward" className="font-display text-xl md:text-2xl text-olive-ink tracking-wide">
+          <span className="sm:hidden">Noah</span>
+          <span className="hidden sm:inline">Noah Woodward</span>
         </Link>
-        <nav className="flex gap-6 text-xl font-semibold">
+        <nav className="flex items-center gap-4 md:gap-6 text-base md:text-xl font-semibold">
           {nav.map((n) => (
             <Link
               key={n.href}
