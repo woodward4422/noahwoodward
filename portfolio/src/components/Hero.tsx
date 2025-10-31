@@ -28,16 +28,10 @@ export function Hero() {
         </ul>
         <div className="mt-8 flex gap-4">
           <Link
-            href="/work"
+            href="/about"
             className="scribble-border bg-cream px-5 py-3 text-olive-ink hover:bg-white transition-colors"
           >
             See work →
-          </Link>
-          <Link
-            href="/about"
-            className="border-2 border-olive-ink px-5 py-3 text-olive-ink hover:bg-cream transition-colors"
-          >
-            About me
           </Link>
         </div>
       </div>

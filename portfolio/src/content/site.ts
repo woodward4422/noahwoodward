@@ -14,7 +14,7 @@ export const site = {
   socials: [
     { label: "GitHub", href: "https://github.com/woodward4422" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/noah-woodward/" },
-    { label: "Email", href: "mailto:woodward4422@gmail.com" },
+    { label: "Email", href: "mailto:noahwoodward2244@gmail.com" },
   ],
   highlights: [
     "Shopify POS Retail engineering",
